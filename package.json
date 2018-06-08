@@ -35,8 +35,6 @@
     "@babel/register": "7.0.0-beta.39",
     "@types/history": "^4.5.0",
     "@types/isomorphic-fetch": "0.0.34",
-    "@types/jss": "^9.5.2",
-    "@types/node": "^8.0.47",
     "@types/react": "16.0.20",
     "@types/react-dom": "^16.0.2",
     "@types/react-helmet": "^5.0.2",
