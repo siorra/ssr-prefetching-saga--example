@@ -1,4 +1,4 @@
-## Example of prefetching SSR
+## Example of redux-saga prefetching in SSR
 ### stack:
 TypeScript, React, Redux, Redux-saga.
 * react 16.3
