@@ -25,14 +25,6 @@ class CategoriesPage extends React.Component<Props, State> {
     return {};
   }
 
-  // componentWillMount() {
-  //   if (this.props.categories.length === 0) {
-  //     console.log('******** CategoriesPage componentDidMount load action');
-  //     this.props.loadCategories();
-  //   }
-  // }
-
-
   render() {
     const { categories } = this.props;
     console.log('container CategoriesPage, render this.props.category', categories);

@@ -14,21 +14,17 @@ type DispatchProps = {
 type Props = StateProps & DispatchProps;
 
 type State = {
-  alreadyLoaded: boolean;
 };
 
 class ItemsPage extends React.Component<Props, State> {
 
-  static getDerivedStateFromProps({loadItems}: Props, {alreadyLoaded}: State) {
-    console.log('container ItemsPage, getDerivedStateFromProps');
-    if (!alreadyLoaded) {
-      loadItems && loadItems();
-      return { alreadyLoaded: true };
+  static getDerivedStateFromProps({loadItems, items}: Props) {
+    if (items.length === 0) {
+      console.log('******** ItemsPage componentDidMount load action');
+      loadItems();
     }
-    return null;
+    return {};
   }
-
-  state = { alreadyLoaded: false, };
 
   render() {
     const { items } = this.props;
