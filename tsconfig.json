@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSourceMap": false,
+    "inlineSources": false,
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": false,
+    "outDir": "build",
+    "paths": {
+      "*": [
+        "src/app/*",
+        "src/app/redux/*"
+      ]
+    },
+    "sourceMap": true,
+    "target": "es6"
+  },
+  "exclude": [
+    "node_modules",
+    "trash-notes",
+    "build",
+    "typings/main",
+    "typings/main.d.ts"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "useCache": false,
+    "useBabel": true
+  }
+}

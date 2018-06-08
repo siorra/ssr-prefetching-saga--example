@@ -1,0 +1,13 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint-react"
+  ],
+  "jsRules": {},
+  "rules": {},
+  "rulesDirectory": [],
+  "semicolon": [
+    true,
+    "always"
+  ]
+}
