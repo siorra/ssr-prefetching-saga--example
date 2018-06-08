@@ -1,74 +1,34 @@
 {
   "name": "vortigern",
   "version": "0.1.2",
-  "description": "A universal boilerplate for building web applications w/ TypeScript, React, Redux and more.",
+  "description": "Example of SSR, TypeScript, React, Redux, Redux-saga + prefetching and more.",
   "main": "build/server.js",
   "scripts": {
-    "startf": "yarn clean && yarn build && yarn start",
-    "startf:p": "clean && build:prod && start:prod",
     "clean": "rimraf build && rimraf coverage",
     "prebuild": "npm run clean",
     "build": "webpack --config config/webpack/index.js",
     "build:prod": "cross-env NODE_ENV=production npm run build",
     "postbuild": "webpack --config config/webpack/server.js",
     "prestart": "npm run build",
-    "startx": "node build/server.js",
-    "start": "cross-env BABEL_ENV=cjs node --require @babel/register build/server.js",
-    "start:prod": "cross-env NODE_ENV=production npm start",
-    "test": "karma start config/test/karma.conf.js",
-    "lint": "tslint \"src/**/**.ts*\""
+    "start": "node build/server.js",
+    "start--": "cross-env BABEL_ENV=cjs node --require @babel/register build/server.js",
+    "start:prod": "cross-env NODE_ENV=production npm start"
   },
-  "author": "Barbar Startup Factory <hey@barbar.com.tr>",
-  "contributors": [
-    {
-      "name": "Altay Aydemir",
-      "email": "altay.aydemir@gmail.com",
-      "url": "http://altayaydemir.com/"
-    },
-    {
-      "name": "Batuhan Icoz",
-      "email": "hey@batuhanicoz.com",
-      "url": "http://batuhanicoz.com/"
-    },
-    {
-      "name": "Omer Ufuk Efendioglu",
-      "email": "ufukomer@gmail.com",
-      "url": "http://ufukomer.com/"
-    },
-    {
-      "name": "Patrick Roza",
-      "email": "contact@patrickroza.com",
-      "url": "http://patrickroza.com/"
-    },
-    {
-      "name": "Ardani Rohman",
-      "email": "master.ardani@gmail.com",
-      "url": "http://ardani.github.io/"
-    }
-  ],
-  "homepage": "https://github.com/barbar/vortigern.git",
+  "author": "Dmitry Vakarev <dmitryvakarev@gmail.com>",
+  "homepage": "https://github.com/siorra/ssr-prefetching-saga--example.git",
   "repository": {
     "type": "git",
-    "url": "https://github.com/barbar/vortigern.git"
-  },
-  "bugs": {
-    "url": "https://github.com/barbar/vortigern/issues"
+    "url": "https://github.com/siorra/ssr-prefetching-saga--example.git"
   },
   "keywords": [
     "react",
     "redux",
     "typescript",
     "webpack",
-    "universal",
     "isomorphic",
     "starter",
-    "kit",
-    "boilerplate",
-    "hot reload",
-    "react-hot-loader",
-    "enzyme",
-    "mocha",
-    "chai"
+    "redux-saga",
+    "ssr"
   ],
   "license": "MIT",
   "devDependencies": {
